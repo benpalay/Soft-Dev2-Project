@@ -1,0 +1,1 @@
+Files and executables must be extracted before being opened.

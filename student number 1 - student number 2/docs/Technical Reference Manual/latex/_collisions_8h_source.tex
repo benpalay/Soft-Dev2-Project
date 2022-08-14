@@ -1,0 +1,32 @@
+\hypertarget{_collisions_8h_source}{}\doxysection{Collisions.\+h}
+\mbox{\hyperlink{_collisions_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef COLLISIONS\_H\_INCLUDED}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define COLLISIONS\_H\_INCLUDED}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <SFML/Window.hpp>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_bullet_8h}{Bullet.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_centipede_class_8h}{CentipedeClass.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mushroom_8h}{Mushroom.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_bug_8h}{Bug.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{23 \textcolor{keyword}{using namespace }sf;}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{class }\mbox{\hyperlink{class_collisions}{Collisions}}}
+\DoxyCodeLine{26 \{}
+\DoxyCodeLine{27 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{38     \mbox{\hyperlink{class_collisions_a0e8f3d64f07270d41c29a49391ef44ce}{Collisions}}(std::list<Bullet>\& \mbox{\hyperlink{class_bullet}{Bullet}}, std::list<Mushroom>\& \mbox{\hyperlink{class_mushroom}{Mushroom}},std::vector<CentipedeClass>\& bodyParts,\textcolor{keywordtype}{int} \&pointC);}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{47     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_collisions_ae7628ef492fd838e7863714f54654a87}{cent\_bug}}(std::vector<CentipedeClass>\& bodyParts, \mbox{\hyperlink{class_bug}{Bug}} \&bug);}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \textcolor{keyword}{private}:}
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} bullet\_mush\_or\_cent(std::list<Bullet>\& \mbox{\hyperlink{class_bullet}{Bullet}}, std::list<Mushroom>\& \mbox{\hyperlink{class_mushroom}{Mushroom}},std::vector<CentipedeClass>\& bodyParts,\textcolor{keywordtype}{int} \&pointC);}
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} mush\_cent(std::list<Mushroom>\& \mbox{\hyperlink{class_mushroom}{Mushroom}},std::vector<CentipedeClass>\& bodyParts);}
+\DoxyCodeLine{52 \};}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// COLLISIONS\_H\_INCLUDED}}
+
+\end{DoxyCode}

@@ -1,0 +1,54 @@
+\hypertarget{class_centipede_body}{}\doxysection{Centipede\+Body Class Reference}
+\label{class_centipede_body}\index{CentipedeBody@{CentipedeBody}}
+
+
+Contains code for constructing a centipede.  
+
+
+
+
+{\ttfamily \#include $<$Centipede\+Body.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_centipede_body_a074a91be05e29c05a4d7d9ba89ae1e27}{move\+Centipede}} (float d, const sf\+::\+Vector2u \&window\+Size)
+\begin{DoxyCompactList}\small\item\em This function moves the centipede. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_centipede_body_aabf82d2664e35b59e3fd312b543deee6}\label{class_centipede_body_aabf82d2664e35b59e3fd312b543deee6}} 
+{\bfseries Centipede\+Body} ()
+\begin{DoxyCompactList}\small\item\em This constructs a centipede body by creating each segment individually and then spreading it out. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_centipede_body_a7e42648a97abade7b79153898b0fdab2}\label{class_centipede_body_a7e42648a97abade7b79153898b0fdab2}} 
+std\+::vector$<$ \mbox{\hyperlink{class_centipede_class}{Centipede\+Class}} $>$ {\bfseries body\+Parts}
+\begin{DoxyCompactList}\small\item\em This is a vector of bullets for easy insertion,deletion and internal changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains code for constructing a centipede. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_centipede_body_a074a91be05e29c05a4d7d9ba89ae1e27}\label{class_centipede_body_a074a91be05e29c05a4d7d9ba89ae1e27}} 
+\index{CentipedeBody@{CentipedeBody}!moveCentipede@{moveCentipede}}
+\index{moveCentipede@{moveCentipede}!CentipedeBody@{CentipedeBody}}
+\doxysubsubsection{\texorpdfstring{moveCentipede()}{moveCentipede()}}
+{\footnotesize\ttfamily void Centipede\+Body\+::move\+Centipede (\begin{DoxyParamCaption}\item[{float}]{d,  }\item[{const sf\+::\+Vector2u \&}]{window\+Size }\end{DoxyParamCaption})}
+
+
+
+This function moves the centipede. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & This is the change in time from when a new game loop has been run \\
+\hline
+{\em window\+Size} & Size of the window to ensure that the bug stays inside \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_centipede_body_8h}{Centipede\+Body.\+h}}\item 
+\mbox{\hyperlink{_centipede_body_8cpp}{Centipede\+Body.\+cpp}}\end{DoxyCompactItemize}

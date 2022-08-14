@@ -1,0 +1,56 @@
+\hypertarget{class_collisions}{}\doxysection{Collisions Class Reference}
+\label{class_collisions}\index{Collisions@{Collisions}}
+
+
+Contains functions for collisions between game objects.  
+
+
+
+
+{\ttfamily \#include $<$Collisions.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collisions_a0e8f3d64f07270d41c29a49391ef44ce}{Collisions}} (std\+::list$<$ \mbox{\hyperlink{class_bullet}{Bullet}} $>$ \&\mbox{\hyperlink{class_bullet}{Bullet}}, std\+::list$<$ \mbox{\hyperlink{class_mushroom}{Mushroom}} $>$ \&\mbox{\hyperlink{class_mushroom}{Mushroom}}, std\+::vector$<$ \mbox{\hyperlink{class_centipede_class}{Centipede\+Class}} $>$ \&body\+Parts, int \&pointC)
+\begin{DoxyCompactList}\small\item\em This accepts game objects and calls specific collision fucntions for two or three types at a time. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_collisions_ae7628ef492fd838e7863714f54654a87}{cent\+\_\+bug}} (std\+::vector$<$ \mbox{\hyperlink{class_centipede_class}{Centipede\+Class}} $>$ \&body\+Parts, \mbox{\hyperlink{class_bug}{Bug}} \&bug)
+\begin{DoxyCompactList}\small\item\em This function checks if the centipede and bug have collided. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains functions for collisions between game objects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_collisions_a0e8f3d64f07270d41c29a49391ef44ce}\label{class_collisions_a0e8f3d64f07270d41c29a49391ef44ce}} 
+\index{Collisions@{Collisions}!Collisions@{Collisions}}
+\index{Collisions@{Collisions}!Collisions@{Collisions}}
+\doxysubsubsection{\texorpdfstring{Collisions()}{Collisions()}}
+{\footnotesize\ttfamily Collisions\+::\+Collisions (\begin{DoxyParamCaption}\item[{std\+::list$<$ \mbox{\hyperlink{class_bullet}{Bullet}} $>$ \&}]{Bullet,  }\item[{std\+::list$<$ \mbox{\hyperlink{class_mushroom}{Mushroom}} $>$ \&}]{Mushroom,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_centipede_class}{Centipede\+Class}} $>$ \&}]{body\+Parts,  }\item[{int \&}]{pointC }\end{DoxyParamCaption})}
+
+
+
+This accepts game objects and calls specific collision fucntions for two or three types at a time. 
+
+This accepts game objects by reference and calls specific collision functions that check for a collision and then modify the object/vector/list. If a bullet hits a centipede part, the centipede part is destroyed,a mushroom is created in that position. If the centipede collides with a mushroom, it reverses dreciton and moves down. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_collisions_ae7628ef492fd838e7863714f54654a87}\label{class_collisions_ae7628ef492fd838e7863714f54654a87}} 
+\index{Collisions@{Collisions}!cent\_bug@{cent\_bug}}
+\index{cent\_bug@{cent\_bug}!Collisions@{Collisions}}
+\doxysubsubsection{\texorpdfstring{cent\_bug()}{cent\_bug()}}
+{\footnotesize\ttfamily bool Collisions\+::cent\+\_\+bug (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_centipede_class}{Centipede\+Class}} $>$ \&}]{body\+Parts,  }\item[{\mbox{\hyperlink{class_bug}{Bug}} \&}]{bug }\end{DoxyParamCaption})}
+
+
+
+This function checks if the centipede and bug have collided. 
+
+\begin{DoxyReturn}{Returns}
+true if the bug and centipede collide 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_collisions_8h}{Collisions.\+h}}\item 
+\mbox{\hyperlink{_collisions_8cpp}{Collisions.\+cpp}}\end{DoxyCompactItemize}

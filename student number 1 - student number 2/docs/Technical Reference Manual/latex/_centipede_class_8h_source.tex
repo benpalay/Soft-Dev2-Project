@@ -1,0 +1,46 @@
+\hypertarget{_centipede_class_8h_source}{}\doxysection{Centipede\+Class.\+h}
+\mbox{\hyperlink{_centipede_class_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CENTIPEDECLASS\_H\_INCLUDED}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CENTIPEDECLASS\_H\_INCLUDED}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_centipede_class}{CentipedeClass}}}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_centipede_class_a6890a7891f7fe6a4041e3d2c56eabec1}{direction\_right}};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_centipede_class_ad251400d005b6bfff687474058c4ea1c}{makeHead}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_centipede_class_a310abfbafa8df3e5d43a268a03d0cc0a}{makeTail}}();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_centipede_class_a28ffa541d0d09e60625ead4ec46a2a9c}{moveCentipedeBody}}(\textcolor{keywordtype}{float} d,\textcolor{keyword}{const} sf::Vector2u \&windowSize);}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{48     \mbox{\hyperlink{class_centipede_class_a3e9d2d38faa4b3406f81808d7dd55a57}{CentipedeClass}}(sf::Vector2f pos);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{52     sf::CircleShape \mbox{\hyperlink{class_centipede_class_a1505141c53428dd0c30aa853b019d133}{CentipedeSeg}};}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_centipede_class_af0fc30ac0e324eb0898769f5470bcd08}{moveCentipedeBody\_mush\_right}}(sf::Vector2f pos);}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{68     \textcolor{keywordtype}{void} moveCentipedeBody\_mush\_left(sf::Vector2f pos);}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{74     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_centipede_class_ab38dc1efa2d4b233f9b525e684e778b4}{head}}();}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{80     \textcolor{keywordtype}{bool} tail();}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82 \textcolor{keyword}{private}:}
+\DoxyCodeLine{83     \textcolor{keywordtype}{int} radius;}
+\DoxyCodeLine{84     \textcolor{keywordtype}{bool} isHead;}
+\DoxyCodeLine{85     \textcolor{keywordtype}{bool} isTail;}
+\DoxyCodeLine{86     \textcolor{keywordtype}{int} centipedeSpeed;}
+\DoxyCodeLine{87     \textcolor{keywordtype}{int} right\_limit;}
+\DoxyCodeLine{88     \textcolor{keywordtype}{int} left\_limit;}
+\DoxyCodeLine{89     \textcolor{keywordtype}{bool} direction\_down;}
+\DoxyCodeLine{90 \};}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CENTIPEDECLASS\_H\_INCLUDED}}
+
+\end{DoxyCode}

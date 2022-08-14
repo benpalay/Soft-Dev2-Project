@@ -1,0 +1,58 @@
+\hypertarget{_game_8h_source}{}\doxysection{Game.\+h}
+\mbox{\hyperlink{_game_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CENTIPEDE\_H\_INCLUDED}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CENTIPEDE\_H\_INCLUDED}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <SFML/System.hpp>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <SFML/Window.hpp>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <cstdlib>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_bug_8h}{Bug.h}}"{}}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_bullet_8h}{Bullet.h}}"{}}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_centipede_body_8h}{CentipedeBody.h}}"{}}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mushroom_field_8h}{MushroomField.h}}"{}}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_collisions_8h}{Collisions.h}}"{}}}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{using namespace }sf;}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{keyword}{class }\mbox{\hyperlink{class_game}{Game}}}
+\DoxyCodeLine{30 \{}
+\DoxyCodeLine{31 \textcolor{keyword}{public}:}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a9a705e31bcc5c3d5778e3136ccc15489}{playGame}}();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 }
+\DoxyCodeLine{49     \mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}}();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{keyword}{private}:}
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} initializeVars();}
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} initializeFont();}
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} initializeText();}
+\DoxyCodeLine{55     \textcolor{keywordtype}{void}  initializeWindow();}
+\DoxyCodeLine{56     Clock clock;}
+\DoxyCodeLine{57     Clock timer;}
+\DoxyCodeLine{58     Time timing;}
+\DoxyCodeLine{59     sf::Font font;}
+\DoxyCodeLine{60     sf::Text message;}
+\DoxyCodeLine{61     sf::Text score;}
+\DoxyCodeLine{62     \mbox{\hyperlink{class_bug}{Bug}} bug;}
+\DoxyCodeLine{63     std::list<Bullet> bullets;}
+\DoxyCodeLine{64     \mbox{\hyperlink{class_centipede_body}{CentipedeBody}} centBody;}
+\DoxyCodeLine{65     \mbox{\hyperlink{class_mushroom_field}{MushroomField}} mushroomField;}
+\DoxyCodeLine{66     \textcolor{keywordtype}{bool} playing;}
+\DoxyCodeLine{67     \textcolor{keywordtype}{float} deltaTime;}
+\DoxyCodeLine{68     \textcolor{keywordtype}{int} pointCounter;}
+\DoxyCodeLine{69     \textcolor{keywordtype}{void} play(sf::Vector2u windowSize);}
+\DoxyCodeLine{70     \textcolor{keywordtype}{void} make\_bullet();}
+\DoxyCodeLine{71     \textcolor{keywordtype}{void} shoot\_bullets (\textcolor{keywordtype}{float} deltaTime);}
+\DoxyCodeLine{72     \textcolor{keywordtype}{void} drawing(sf::RenderTarget\& x, \textcolor{keywordtype}{bool} playing);}
+\DoxyCodeLine{73     sf::RenderWindow window;}
+\DoxyCodeLine{74 \};}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CENTIPEDE\_H\_INCLUDED}}
+
+\end{DoxyCode}

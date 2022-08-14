@@ -1,0 +1,108 @@
+\hypertarget{class_centipede_class}{}\doxysection{Centipede\+Class Class Reference}
+\label{class_centipede_class}\index{CentipedeClass@{CentipedeClass}}
+
+
+Contains code used for the functionality of a centipede part.  
+
+
+
+
+{\ttfamily \#include $<$Centipede\+Class.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_centipede_class_ad251400d005b6bfff687474058c4ea1c}\label{class_centipede_class_ad251400d005b6bfff687474058c4ea1c}} 
+void {\bfseries make\+Head} ()
+\begin{DoxyCompactList}\small\item\em This function makes the bodypart into a head. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_centipede_class_a310abfbafa8df3e5d43a268a03d0cc0a}\label{class_centipede_class_a310abfbafa8df3e5d43a268a03d0cc0a}} 
+void {\bfseries make\+Tail} ()
+\begin{DoxyCompactList}\small\item\em This function makes the bodypart into a tail. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_centipede_class_a28ffa541d0d09e60625ead4ec46a2a9c}{move\+Centipede\+Body}} (float d, const sf\+::\+Vector2u \&window\+Size)
+\begin{DoxyCompactList}\small\item\em This function moves the centipede bodypart. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_centipede_class_a3e9d2d38faa4b3406f81808d7dd55a57}{Centipede\+Class}} (sf\+::\+Vector2f pos)
+\begin{DoxyCompactList}\small\item\em This constructs a centipede bodypart. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_centipede_class_af0fc30ac0e324eb0898769f5470bcd08}{move\+Centipede\+Body\+\_\+mush\+\_\+right}} (sf\+::\+Vector2f pos)
+\begin{DoxyCompactList}\small\item\em This function moves the centipede bodypart down and then left if it hits a mushroom from the right. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_centipede_class_aa3f52ab90612fc66a97baafcc9bf69bf}\label{class_centipede_class_aa3f52ab90612fc66a97baafcc9bf69bf}} 
+void {\bfseries move\+Centipede\+Body\+\_\+mush\+\_\+left} (sf\+::\+Vector2f pos)
+\item 
+\mbox{\Hypertarget{class_centipede_class_ab38dc1efa2d4b233f9b525e684e778b4}\label{class_centipede_class_ab38dc1efa2d4b233f9b525e684e778b4}} 
+bool {\bfseries head} ()
+\begin{DoxyCompactList}\small\item\em This boolean function determines if the body part is a head. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_centipede_class_a0e86bc49b5bc9d517bf814fbba03e162}\label{class_centipede_class_a0e86bc49b5bc9d517bf814fbba03e162}} 
+bool {\bfseries tail} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_centipede_class_a6890a7891f7fe6a4041e3d2c56eabec1}\label{class_centipede_class_a6890a7891f7fe6a4041e3d2c56eabec1}} 
+bool {\bfseries direction\+\_\+right}
+\begin{DoxyCompactList}\small\item\em a boolean which is used to determine if the centipede is moving right \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_centipede_class_a1505141c53428dd0c30aa853b019d133}\label{class_centipede_class_a1505141c53428dd0c30aa853b019d133}} 
+sf\+::\+Circle\+Shape {\bfseries Centipede\+Seg}
+\begin{DoxyCompactList}\small\item\em This creates a built in SFML circle shape to represent a centipede bodypart. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains code used for the functionality of a centipede part. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_centipede_class_a3e9d2d38faa4b3406f81808d7dd55a57}\label{class_centipede_class_a3e9d2d38faa4b3406f81808d7dd55a57}} 
+\index{CentipedeClass@{CentipedeClass}!CentipedeClass@{CentipedeClass}}
+\index{CentipedeClass@{CentipedeClass}!CentipedeClass@{CentipedeClass}}
+\doxysubsubsection{\texorpdfstring{CentipedeClass()}{CentipedeClass()}}
+{\footnotesize\ttfamily Centipede\+Class\+::\+Centipede\+Class (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})}
+
+
+
+This constructs a centipede bodypart. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & This is the where the centipede bodypart is to be positioned \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_centipede_class_a28ffa541d0d09e60625ead4ec46a2a9c}\label{class_centipede_class_a28ffa541d0d09e60625ead4ec46a2a9c}} 
+\index{CentipedeClass@{CentipedeClass}!moveCentipedeBody@{moveCentipedeBody}}
+\index{moveCentipedeBody@{moveCentipedeBody}!CentipedeClass@{CentipedeClass}}
+\doxysubsubsection{\texorpdfstring{moveCentipedeBody()}{moveCentipedeBody()}}
+{\footnotesize\ttfamily void Centipede\+Class\+::move\+Centipede\+Body (\begin{DoxyParamCaption}\item[{float}]{d,  }\item[{const sf\+::\+Vector2u \&}]{window\+Size }\end{DoxyParamCaption})}
+
+
+
+This function moves the centipede bodypart. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & This is the change in time from when a new game loop has been run \\
+\hline
+{\em window\+Size} & Size of the window to ensure that the bug stays inside \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_centipede_class_af0fc30ac0e324eb0898769f5470bcd08}\label{class_centipede_class_af0fc30ac0e324eb0898769f5470bcd08}} 
+\index{CentipedeClass@{CentipedeClass}!moveCentipedeBody\_mush\_right@{moveCentipedeBody\_mush\_right}}
+\index{moveCentipedeBody\_mush\_right@{moveCentipedeBody\_mush\_right}!CentipedeClass@{CentipedeClass}}
+\doxysubsubsection{\texorpdfstring{moveCentipedeBody\_mush\_right()}{moveCentipedeBody\_mush\_right()}}
+{\footnotesize\ttfamily void Centipede\+Class\+::move\+Centipede\+Body\+\_\+mush\+\_\+right (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})}
+
+
+
+This function moves the centipede bodypart down and then left if it hits a mushroom from the right. 
+
+This function moves the centipede bodypart down and then right if it hits a mushroom from the left.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The postion of the centipede body part \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_centipede_class_8h}{Centipede\+Class.\+h}}\item 
+\mbox{\hyperlink{_centipede_class_8cpp}{Centipede\+Class.\+cpp}}\end{DoxyCompactItemize}

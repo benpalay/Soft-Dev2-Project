@@ -1,0 +1,70 @@
+\hypertarget{class_mushroom}{}\doxysection{Mushroom Class Reference}
+\label{class_mushroom}\index{Mushroom@{Mushroom}}
+
+
+Contains code for constructing a mushroom.  
+
+
+
+
+{\ttfamily \#include $<$Mushroom.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mushroom_a562ead207161f84317c8fb9203a74de4}{Mushroom}} (sf\+::\+Vector2f position\+\_\+rand)
+\begin{DoxyCompactList}\small\item\em This constructs a mushroom object at a random position. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_mushroom_a9f23ef9dae44f1b2f22faae764f61d06}{get\+Health}} ()
+\begin{DoxyCompactList}\small\item\em This function provides the number of times a mushroom can be hit (-\/1) before being destroyed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mushroom_ab67f954b16fffeaf6d4ae0b8670962a8}\label{class_mushroom_ab67f954b16fffeaf6d4ae0b8670962a8}} 
+void {\bfseries is\+Hit} ()
+\begin{DoxyCompactList}\small\item\em This function decreases the health of a mushroom when it is hit by a bullet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mushroom_a52ba1d9c9dde197ae06c9c28d4fb3b26}\label{class_mushroom_a52ba1d9c9dde197ae06c9c28d4fb3b26}} 
+sf\+::\+Rectangle\+Shape {\bfseries mushroom}
+\begin{DoxyCompactList}\small\item\em This creates a built in SFML rectangle shape to represent a mushroom. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains code for constructing a mushroom. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_mushroom_a562ead207161f84317c8fb9203a74de4}\label{class_mushroom_a562ead207161f84317c8fb9203a74de4}} 
+\index{Mushroom@{Mushroom}!Mushroom@{Mushroom}}
+\index{Mushroom@{Mushroom}!Mushroom@{Mushroom}}
+\doxysubsubsection{\texorpdfstring{Mushroom()}{Mushroom()}}
+{\footnotesize\ttfamily Mushroom\+::\+Mushroom (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{position\+\_\+rand }\end{DoxyParamCaption})}
+
+
+
+This constructs a mushroom object at a random position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position\+\_\+rand} & Is a random point within the screen limits \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mushroom_a9f23ef9dae44f1b2f22faae764f61d06}\label{class_mushroom_a9f23ef9dae44f1b2f22faae764f61d06}} 
+\index{Mushroom@{Mushroom}!getHealth@{getHealth}}
+\index{getHealth@{getHealth}!Mushroom@{Mushroom}}
+\doxysubsubsection{\texorpdfstring{getHealth()}{getHealth()}}
+{\footnotesize\ttfamily int Mushroom\+::get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function provides the number of times a mushroom can be hit (-\/1) before being destroyed. 
+
+\begin{DoxyReturn}{Returns}
+health of a mushroom 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_mushroom_8h}{Mushroom.\+h}}\item 
+\mbox{\hyperlink{_mushroom_8cpp}{Mushroom.\+cpp}}\end{DoxyCompactItemize}
